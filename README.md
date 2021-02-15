@@ -1,1 +1,1 @@
-# CodeSamples for .NET Internal Lab Gomel
+# Code Samples for .NET Internal Lab Gomel
