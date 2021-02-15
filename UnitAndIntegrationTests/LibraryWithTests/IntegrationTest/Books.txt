@@ -1,0 +1,27 @@
+﻿[
+    {
+        "Id": 1,
+		"IsArchive":false,
+        "Name": "The Lord of the Rings"
+    },	
+    {
+        "Id": 2,
+		"IsArchive":false,
+        "Name": "Le Petit Prince"
+    },
+    {
+        "Id": 3,
+		"IsArchive":false,
+        "Name": "Harry Potter and the Philosopher's Stone"
+    },
+	{
+        "Id": 4,
+		"IsArchive":false,
+        "Name": "The Hobbit"
+    },
+	{
+        "Id": 5,
+		"IsArchive":false,
+        "Name": "Herbert Schildt C#"
+    }
+]
