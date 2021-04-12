@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepApi", "WepApi\WepApi.csproj", "{74FE6633-7E6E-4451-90C2-D07D84A09991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{2030FEA2-ECF8-44DB-B02D-440D3AD1A6C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74FE6633-7E6E-4451-90C2-D07D84A09991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FE6633-7E6E-4451-90C2-D07D84A09991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FE6633-7E6E-4451-90C2-D07D84A09991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FE6633-7E6E-4451-90C2-D07D84A09991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2030FEA2-ECF8-44DB-B02D-440D3AD1A6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2030FEA2-ECF8-44DB-B02D-440D3AD1A6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2030FEA2-ECF8-44DB-B02D-440D3AD1A6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2030FEA2-ECF8-44DB-B02D-440D3AD1A6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E396816-D91D-49BD-9826-56DF5CD8B512}
+	EndGlobalSection
+EndGlobal
