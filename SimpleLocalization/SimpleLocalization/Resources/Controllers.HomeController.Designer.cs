@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleLocalization.Resources.ViewModels.Home {
+namespace SimpleLocalization.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class PersonViewModel {
+    public class Controllers_HomeController {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PersonViewModel() {
+        internal Controllers_HomeController() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SimpleLocalization.Resources.ViewModels.Home.PersonViewModel", typeof(PersonViewModel).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SimpleLocalization.Resources.Controllers.HomeController", typeof(Controllers_HomeController).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,56 +61,11 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is a random string.
+        ///   Looks up a localized string similar to This is very important value.
         /// </summary>
-        public static string AnotherKey {
+        public static string ImportantValue {
             get {
-                return ResourceManager.GetString("AnotherKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Something.
-        /// </summary>
-        public static string dd {
-            get {
-                return ResourceManager.GetString("dd", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Language:.
-        /// </summary>
-        public static string Language_ {
-            get {
-                return ResourceManager.GetString("Language:", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is a secondary key.
-        /// </summary>
-        public static string SecondaryKey {
-            get {
-                return ResourceManager.GetString("SecondaryKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is localized last name.
-        /// </summary>
-        public static string Some_Last_Name {
-            get {
-                return ResourceManager.GetString("Some Last Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is localized name.
-        /// </summary>
-        public static string Some_Name {
-            get {
-                return ResourceManager.GetString("Some Name", resourceCulture);
+                return ResourceManager.GetString("ImportantValue", resourceCulture);
             }
         }
     }

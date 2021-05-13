@@ -22,14 +22,14 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class PersonViewModel {
+    public class Resource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PersonViewModel() {
+        internal Resource() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SimpleLocalization.Resources.ViewModels.Home.PersonViewModel", typeof(PersonViewModel).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SimpleLocalization.Resources.ViewModels.Home.Resource", typeof(Resource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,60 +57,6 @@ namespace SimpleLocalization.Resources.ViewModels.Home {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is a random string.
-        /// </summary>
-        public static string AnotherKey {
-            get {
-                return ResourceManager.GetString("AnotherKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Something.
-        /// </summary>
-        public static string dd {
-            get {
-                return ResourceManager.GetString("dd", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Language:.
-        /// </summary>
-        public static string Language_ {
-            get {
-                return ResourceManager.GetString("Language:", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is a secondary key.
-        /// </summary>
-        public static string SecondaryKey {
-            get {
-                return ResourceManager.GetString("SecondaryKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is localized last name.
-        /// </summary>
-        public static string Some_Last_Name {
-            get {
-                return ResourceManager.GetString("Some Last Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is localized name.
-        /// </summary>
-        public static string Some_Name {
-            get {
-                return ResourceManager.GetString("Some Name", resourceCulture);
             }
         }
     }

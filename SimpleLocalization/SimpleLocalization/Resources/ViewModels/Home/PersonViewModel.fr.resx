@@ -118,24 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AnotherKey" xml:space="preserve">
-    <value>Гэта лакалізаваная выпадковая строчка</value>
+    <value>This is a random string</value>
   </data>
   <data name="dd" xml:space="preserve">
-    <value>ssda</value>
+    <value>Something</value>
   </data>
   <data name="Language:" xml:space="preserve">
-    <value>Мова:</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Language:</value>
   </data>
   <data name="SecondaryKey" xml:space="preserve">
-    <value>Гэта лакалізаваная другасная назва</value>
+    <value>This is a secondary key</value>
   </data>
   <data name="Some Last Name" xml:space="preserve">
-    <value>Гэта лакалізаванае прозвішча</value>
+    <value>Thi111</value>
   </data>
   <data name="Some Name" xml:space="preserve">
-    <value>Гэта лакалізаваная назва</value>
+    <value>11</value>
   </data>
 </root>

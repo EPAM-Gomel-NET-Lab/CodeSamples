@@ -37,10 +37,11 @@ namespace SimpleLocalization
                 var supportedCultures = new[]
                 {
                     new CultureInfo("be-BY"),
+                    new CultureInfo("en-US"),
                 };
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
-                options.DefaultRequestCulture = new RequestCulture("be-BY");
+                options.DefaultRequestCulture = new RequestCulture("en-US");
             });
         }
 

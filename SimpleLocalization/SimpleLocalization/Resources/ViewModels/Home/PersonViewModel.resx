@@ -123,6 +123,9 @@
   <data name="dd" xml:space="preserve">
     <value>Something</value>
   </data>
+  <data name="Language:" xml:space="preserve">
+    <value>Language:</value>
+  </data>
   <data name="SecondaryKey" xml:space="preserve">
     <value>This is a secondary key</value>
   </data>
