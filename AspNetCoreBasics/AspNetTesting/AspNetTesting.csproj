@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IdentityCreation\IdentityCreation.csproj" />
+    <ProjectReference Include="..\ClassicTemplate\ClassicTemplate.csproj" />
   </ItemGroup>
 
 </Project>
