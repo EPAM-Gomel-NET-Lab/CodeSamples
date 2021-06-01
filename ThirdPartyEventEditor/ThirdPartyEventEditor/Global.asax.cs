@@ -3,7 +3,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using ThirdPartyEventEditor;
 
-namespace ClassicMvc
+namespace ThirdPartyEventEditor
 {
     public class Global : System.Web.HttpApplication
     {
