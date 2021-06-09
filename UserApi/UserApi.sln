@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi", "UserApi\UserApi.csproj", "{550C6961-A36C-4A07-9913-BE63F5CDB0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApi", "ConsumerApi\ConsumerApi.csproj", "{86534183-F06D-40F8-BEA2-49C87DE8899D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{7EC85E23-2E87-48A5-8074-589349A5209A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550C6961-A36C-4A07-9913-BE63F5CDB0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550C6961-A36C-4A07-9913-BE63F5CDB0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550C6961-A36C-4A07-9913-BE63F5CDB0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550C6961-A36C-4A07-9913-BE63F5CDB0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86534183-F06D-40F8-BEA2-49C87DE8899D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86534183-F06D-40F8-BEA2-49C87DE8899D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86534183-F06D-40F8-BEA2-49C87DE8899D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86534183-F06D-40F8-BEA2-49C87DE8899D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC85E23-2E87-48A5-8074-589349A5209A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC85E23-2E87-48A5-8074-589349A5209A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC85E23-2E87-48A5-8074-589349A5209A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC85E23-2E87-48A5-8074-589349A5209A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38EB600D-AC68-4B61-AB57-53EC7E38E9C8}
+	EndGlobalSection
+EndGlobal

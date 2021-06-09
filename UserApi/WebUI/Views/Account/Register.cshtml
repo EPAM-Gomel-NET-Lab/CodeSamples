@@ -1,0 +1,9 @@
+﻿@using WebUI.Models;
+@model UserModel;
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+{
+    @Html.TextBoxFor(m => m.Login)
+    @Html.PasswordFor(m => m.Password)
+    <input type="submit" value="Register" />
+}
