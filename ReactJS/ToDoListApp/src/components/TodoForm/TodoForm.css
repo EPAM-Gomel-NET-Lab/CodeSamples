@@ -1,0 +1,9 @@
+.form-inline {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form-inline .form-control {
+  width: 50%;
+  margin-right: 10px;
+}
