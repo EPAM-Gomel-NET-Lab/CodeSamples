@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using FluentAssertions;
 using LibraryForTests;
@@ -75,6 +76,7 @@ namespace IntegrationTest
             });
         }
 
+        // Should be moved to unit tests. The check is trivial and pure
         [Test]
         public void Add_WhenBookIsNull_ShouldReturnException()
         {
@@ -152,24 +154,32 @@ namespace IntegrationTest
         }
 
         [Test]
-        public void sUpdate_WhenUpdateExistBook_ShouldReturnBookListWithUpdatedBook()
+        public void Update_WhenUpdateExistBook_ShouldReturnBookListWithUpdatedBook()
         {
             // Arrange
-            var bookToDelete = new Book { Id = 1, Name = "The Lord of the Rings" };
+            var bookToUpdate = new Book { Id = 1, Name = "Hobbit" };
 
             var bookFileStorage = new BookFileStorage(_settings);
 
             // Act
-            bookFileStorage.Update(bookToDelete);
+            var booksBeforeUpdate = bookFileStorage.GetAll();
+            bookFileStorage.Update(bookToUpdate);
             var books = bookFileStorage.GetAll();
 
             // Assert
+            booksBeforeUpdate.Should().BeEquivalentTo(new List<Book>
+            {
+                new Book { Id = 1, Name = "The Lord of the Rings" }, // updated value here
+                new Book { Id = 2, Name = "Le Petit Prince" },
+                new Book { Id = 3, Name = "Harry Potter and the Philosopher's Stone" },
+                new Book { Id = 4, Name = "The Hobbit" }
+            });
             books.Should().BeEquivalentTo(new List<Book>
             {
                 new Book { Id = 2, Name = "Le Petit Prince" },
                 new Book { Id = 3, Name = "Harry Potter and the Philosopher's Stone" },
                 new Book { Id = 4, Name = "The Hobbit" },
-                new Book { Id = 1, Name = "The Lord of the Rings" }
+                new Book { Id = 1, Name = "Hobbit" }
             });
         }
 
@@ -211,10 +221,17 @@ namespace IntegrationTest
             var bookFileStorage = new BookFileStorage(_settings);
 
             // Act
+            var bookBeforeArchive = bookFileStorage.GetAll().Where(x => x.Id == 1);
             bookFileStorage.Archive(book);
             var result = bookFileStorage.GetAll();
 
             // Assert
+            bookBeforeArchive.Should().BeEquivalentTo(new Book 
+            {
+                Id = 1,
+                IsArchive = false,
+                Name = "The Lord of the Rings",
+            });
             result.Should().BeEquivalentTo(new List<Book>
             {
                 new Book { Id = 1, Name = "The Lord of the Rings", IsArchive = true },

@@ -13,33 +13,6 @@ namespace UnitTest
     [TestFixture]
     public class LibraryTests
     {
-
-        [Test]
-        public void IsValid_WhenIncorrectEmailProvided_ShouldReturnFalse()
-        {
-            // Arrange
-            var emailAttribute = new EmailAddressAttribute();
-
-            // Act
-            var isValid = emailAttribute.IsValid("test.com");
-
-            // Assert
-            Assert.That(isValid, Is.False);
-        }
-
-        [Test]
-        public void IsValid_WhenCorrectEmailProvided_ShouldReturnTrue()
-        {
-            // Arrange
-            var emailAttribute = new EmailAddressAttribute();
-
-            // Act
-            var isValid = emailAttribute.IsValid("test@gmail.com");
-
-            // Assert
-            Assert.That(isValid, Is.True);
-        }
-
         [Test]
         public void Rent_WhenUserRentMoreTwoBooks_ShouldReturnException()
         {
@@ -56,7 +29,7 @@ namespace UnitTest
             var library = new Library(userStoreMock.Object, bookStoreMock.Object, userBooksMock.Object);
 
             // Act
-            TestDelegate testAction = () => library.RentBook(new User {Id = 4}, new Book {Id = 3});
+            TestDelegate testAction = () => library.RentBook(new User {Id = 4}, new Book {Id = 8});
 
             // Assert
             var ex = Assert.Throws<InvalidOperationException>(testAction);
@@ -133,6 +106,10 @@ namespace UnitTest
             // Assert
             userBooks.Should()
                 .ContainSingle(ub => ub.UserId == 7 && ub.BookId == 7 && ub.RentDateStart >= DateTime.Now.AddSeconds(-1));
+            userBooks.Should().BeEquivalentTo(new List<UserBook> 
+            {
+                new UserBook { UserId = 7, BookId = 7 }
+            }, options => options.Excluding(x => x.RentDateStart));
         }
 
         [Test]
@@ -160,7 +137,7 @@ namespace UnitTest
 
 
         [Test]
-        public void ReturnBook_WhenReturnNonExistUserBook_ShouldReturnException()
+        public void ReturnBook_WhenReturnNonExistingUserBook_ShouldReturnException()
         {
             // Arrange 
             var userBooksMock = new Mock<IStore<UserBook>>();
@@ -175,11 +152,11 @@ namespace UnitTest
             var library = new Library(userStoreMock.Object, bookStoreMock.Object, userBooksMock.Object);
 
             // Act
-            TestDelegate testAction = () => library.ReturnBook(new User { Id = 2 }, new Book { Id = 3 });
+            Action testAction = () => library.ReturnBook(new User { Id = 2 }, new Book { Id = 3 });
 
             // Assert
-            var ex = Assert.Throws<InvalidOperationException>(testAction);
-            Assert.That(ex.Message, Is.EqualTo("There is not this book for this user in the UserBook Storage!"));
+            testAction.Should().ThrowExactly<InvalidOperationException>()
+                .WithMessage("There is no book for this user in the UserBook Storage!");
         }
 
         [Test]

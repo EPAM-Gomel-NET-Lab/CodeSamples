@@ -45,7 +45,7 @@ namespace LibraryForTests
             var returnBook = _userBooks.GetAll().Find(x => x.UserId == user.Id && x.BookId == book.Id && !x.IsArchive);
             if(returnBook == null)
             {
-                throw new InvalidOperationException("There is not this book for this user in the UserBook Storage!");
+                throw new InvalidOperationException("There is no book for this user in the UserBook Storage!");
             }
 
             _userBooks.Delete(returnBook);
