@@ -10,10 +10,11 @@ namespace TPL
         {
             var samples = new List<IAsyncCodeSample>
             {
-                new NonAsyncSample(),
+                new ParallelExtensions(),
+                /*new NonAsyncSample(),
                 new Syncronization(),
                 new Cancellation(),
-                new DuckTypingAwaitable(),
+                new DuckTypingAwaitable(),*/
             };
             foreach (var asyncCodeSample in samples)
             {
