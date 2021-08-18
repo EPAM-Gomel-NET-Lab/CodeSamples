@@ -1,0 +1,17 @@
+@model List<EF_Task.Models.ProductCategoryInfo>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Product Info For Category</h2>
+@foreach (var productCategoryInfo in Model)
+{
+    <br/>
+    <li>@productCategoryInfo.ProductName</li>
+    <li>@productCategoryInfo.ContactName</li>
+    <li>@productCategoryInfo.UnitPrice</li>
+    <li>@productCategoryInfo.Quantity</li>
+    <br>
+}
