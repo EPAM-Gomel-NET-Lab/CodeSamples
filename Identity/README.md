@@ -1,5 +1,5 @@
 Links to docs:
-It is reccomended to read at least first half of topics in this section of documents: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-5.0
+It is reccomended to read at least first half of topics in this section of documents: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-6.0
 
 In order to convert your idenity model into the RAW sql script you need to follow these steps.
 

@@ -33,7 +33,7 @@ namespace IntegrationTest
             }
             File.WriteAllText(_settings.FileNameData, result);
         }
-        
+
         [Test]
         public void GetAll_WhenBookExist_ShouldReturnBooksList()
         {
@@ -58,7 +58,7 @@ namespace IntegrationTest
         {
             // Arrange
             var bookToAdd = new Book { Name = "Herbert Schildt C#" };
-                        
+
             var bookFileStorage = new BookFileStorage(_settings);
 
             // Act
@@ -226,11 +226,14 @@ namespace IntegrationTest
             var result = bookFileStorage.GetAll();
 
             // Assert
-            bookBeforeArchive.Should().BeEquivalentTo(new Book 
+            bookBeforeArchive.Should().BeEquivalentTo(new List<Book>
             {
-                Id = 1,
-                IsArchive = false,
-                Name = "The Lord of the Rings",
+                new Book
+                {
+                    Id = 1,
+                    IsArchive = false,
+                    Name = "The Lord of the Rings"
+                }
             });
             result.Should().BeEquivalentTo(new List<Book>
             {

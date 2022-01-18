@@ -132,7 +132,7 @@ namespace UnitTest
 
             // Assert
             var _userBokkTimeStart = userBooks.Find(ub => ub.UserId == 7 && ub.BookId == 7).RentDateStart;
-            _userBokkTimeStart.Should().BeCloseTo(DateTime.Now);
+            _userBokkTimeStart.Should().BeCloseTo(DateTime.Now, DateTime.Now.TimeOfDay);
         }
 
 
