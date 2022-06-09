@@ -1,0 +1,34 @@
+﻿@using AuthWebApp.Web.Models
+@model UserIdentityDetailsViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "User Details Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>User Id: @Model.UserId</h2>
+<h2>User Name: @Model.UserName</h2>
+<h2>First Name: @Model.FirstName</h2>
+<h2>Last Name: @Model.LastName</h2>
+
+<h2>Roles:</h2>
+
+<ul>
+    @foreach (var role in Model.Roles)
+    {
+        <li>@role</li>
+    }
+</ul>
+
+<h2>Claims:</h2>
+
+<ul>
+    @foreach (var claim in Model.Claims)
+    {
+        <li>@claim.Type = @claim.Value</li>
+    }
+</ul>
+
+
