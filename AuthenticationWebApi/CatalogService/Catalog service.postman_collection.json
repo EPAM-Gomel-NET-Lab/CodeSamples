@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "0b0fc407-7afe-40e2-a8d5-f6249b2df6de",
+		"name": "Catalog service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "499217"
+	},
+	"item": [
+		{
+			"name": "All categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImY5ZjZlODM1LTBiYzctNDkzZS1iMTI1LWZlODIyOTY5ZjJjOSIsInN1YiI6ImFkbWluQHRlc3QuY29tIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY1NDM3Mjk3NiwiZXhwIjoxNjU0MzczNTc2LCJpYXQiOjE2NTQzNzI5NzZ9.VoJJNiF8lLQS3s5VBx7K23wSvu-dsvS8RgSHTopcX6I7iJrbUSiaOpXfR9tObFVqMlk4VHlPZW1S3TBVHnlm1w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:48680/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "48680",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImY5ZjZlODM1LTBiYzctNDkzZS1iMTI1LWZlODIyOTY5ZjJjOSIsInN1YiI6ImFkbWluQHRlc3QuY29tIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY1NDM3Mjg3MywiZXhwIjoxNjU0MzczNDczLCJpYXQiOjE2NTQzNzI4NzN9.oHRAHsf_qmqZWL_7GL-Tvzl3o5cs4g7M7NGzuzvHZLyjYHXLrL1pMYuegZTi6i5QzpnzCBQxTqYUnORHwWqLow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:48680/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "48680",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
